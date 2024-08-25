@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Khand:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Khand:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Khand:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Khand:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+body {
+  background: rgb(0, 0, 0);
+}
+
+.container {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 20px;
+
+  font-family: "Khand", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+form ::before, form::after{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+      #0000ff, #00ff00,#ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+  }
+  
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .block:after {
+    filter: blur(50px);
+  }
+
+.container > form {
+  width: 80%;
+  padding: 20px;
+  border-radius: 5px;
+  background: #0000005d;
+  word-spacing: 0.1rem;
+  color: white;
+  font-size: 18px; 
+  position: relative;
+  margin: 30px auto 0;
+  
+  background: linear-gradient(0deg, #000, #272727);
+}
+
+label {
+  display: block; 
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+
+button {
+  /* background: #0563b4 !important;
+  padding: 10px;
+  height: 40px;
+  width: 70px;
+  border-radius: 10px;
+  display: block; 
+  margin: 20px auto; 
+  padding: 0; 
+  font-size: 16px; 
+  background: #0084ff !important;  */
+
+  background-color: #333; /* dark gray background */
+  color: #fff; /* white text */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  font-family: "Khand", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+margin-left: 10px;
+}
+
+p {
+  color: red;
+}
+.container > form {
+  font-size: 18px; 
+}
+
+label {
+  display: block;
+  margin-bottom: 10px; 
+}
+
+input {
+  width: 90%; 
+  padding: 10px; 
+  margin-bottom: 20px; 
+}
+@media only screen and (min-width: 768px) {
+  .container {
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+}
+
+.password-container input {
+  flex: 1;
+}
+
+.toggle-password {
+  position: relative;
+  right: 10px;
+  top: -10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #007bff;
+}
+.success-box input[type="text"], .success-box input[type="password"] {
+  margin-bottom: 20px; 
+}
