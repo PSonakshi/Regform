@@ -45,8 +45,8 @@
 // export default App
 
 import { useState } from 'react'
-import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
-import { app } from "./firebase"
+// import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
+// import { app } from "./firebase"
 import './App.css'
 import Registration from './components/registration'
 import Success from './components/Success'
@@ -57,7 +57,7 @@ import {
   Link,
 } from "react-router-dom";
 
-const auth = getAuth(app); 
+// const auth = getAuth(app); 
 
 const router = createBrowserRouter([
   {
@@ -71,18 +71,18 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [password, setPassword] = useState('');
 
   const signupUser = (e) => {
     e.preventDefault();
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        console.log(userCredential);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    // createUserWithEmailAndPassword(auth, email, password)
+    //   .then((userCredential) => {
+    //     console.log(userCredential);
+    //   })
+    //   .catch((error) => {
+    //     console.error(error);
+    //   });
   };
 
   return (
